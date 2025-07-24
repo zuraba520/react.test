@@ -1,0 +1,98 @@
+/* Reset და ფონური ფერი მთელ აპლიკაციაზე */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* Root container — სიგანე და ცენტრში გასწორება */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ფილმის ბარათის სტილი */
+.card {
+  padding: 1.5rem;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* საძიებო input */
+input[type='text'] {
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: #1c1c1c;
+  color: white;
+}
+
+/* ღილაკები */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button.add {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.remove {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+}
+
+button.details {
+  background-color: #444;
+  color: white;
+}
+
+/* ფილმების wrapper */
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* სათაურები */
+h2 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+
+#root {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
