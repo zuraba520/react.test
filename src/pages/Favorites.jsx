@@ -40,3 +40,6 @@ export default function Favorites() {
     </div>
   );
 }
+
+//fix it also
+
